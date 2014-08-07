@@ -1,37 +1,37 @@
 var ftpm = require('./lib/ftpm');
 
-var ftpmModule = {
+var ftpmModuleCb = {
 	installOsFont: function(fontName, cb) {
-		ftpm.emit('runDriver', 'osfont', 'install', fontName, cb);
+        ftpm.runDriver('osfont', 'install', fontName, cb);
 	},
 	uninstallOsFont: function(fontName, cb) {
 		fontName = fontName.toTitleCase();
 		ftpm.callbackFunction = cb;
 		if (existsSync(ftpm.path.getFontPath(ftpm.platform) + fontName.removeSpaces() + '.ftpm.ttf')) {
-			ftpm.emit('runDriver', 'osfont', 'uninstall', fontName);
+			ftpm.runDriver('osfont', 'uninstall', fontName,cb);
 		}
 	},
 	listIntalledFonts: function(cb) {
 		ftpm.callbackFunction = cb;
-		ftpm.emit('runDriver', 'osfont', 'local', '');
+		ftpm.runDriver('osfont', 'local', '',cb);
 	},
 	downloadWebFont: function(fontName, fontPath, cb) {
 		ftpm.callbackFunction = cb;
 		ftpm.outputPath = fontPath;
-		ftpm.emit('runDriver', 'webfont', 'web', fontName);
+		ftpm.runDriver('webfont', 'web', fontName,cb);
 	},
 	getCssFont: function(fontName, fontPath, cb) {
 		ftpm.callbackFunction = cb;
 		ftpm.outputPath = fontPath;
 		ftpm.showContent = (!fontPath) ? true : false;
-		ftpm.emit('runDriver', 'cssfont', 'css', fontName);
+		ftpm.runDriver('cssfont', 'css', fontName,cb);
 	},
 	getDataURI: function(fontName, fontPath, cb) {
 		ftpm.callbackFunction = cb;
 		ftpm.outputPath = fontPath;
 		ftpm.showContent = (!fontPath) ? true : false;
-		ftpm.emit('runDriver', 'cssfont', 'datauri', fontName);
+		ftpm.runDriver('cssfont', 'datauri', fontName,cb);
 	}
 };
 
-module.exports = ftpmModule;
+module.exports = ftpmModuleCb;
