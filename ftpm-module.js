@@ -13,10 +13,13 @@ var ftpmModuleCb = {
 	listIntalledFonts: function(cb) {
 		ftpm.runDriver('osfont', 'local', '',cb);
 	},
-	downloadWebFont: function(fontName, cb) {
+	downloadWebFont: function(fontName,fontPath, cb) {
+        ftpm.outputPath = fontPath;
 		ftpm.runDriver('webfont', 'web', fontName,cb);
 	},
-	getCssFont: function(fontName, cb) {
+	getCssFont: function(fontName, fontPath, cb){
+        ftpm.outputPath = fontPath;
+        ftpm.showContent = (!fontPath) ? true : false;
 		ftpm.runDriver('cssfont', 'css', fontName,cb);
 	},
 	getDataURI: function(fontName, fontPath, cb) {
