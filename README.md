@@ -1,7 +1,9 @@
-ftpm-module
+ftpm-module-rewrite
 ===========
 
-Porting of [ftpm] library can be used as a class within the nodejs.
+Rewriteing of [ftpm-module] library wich is a porting of [ftpm] that enables you to use it as a nodejs module. I'm rewriting it because I don't like the eventfull style of coding,
+I reported some problems using the library ( such as callbacks emitted multiple times and with non standard messages ). For now I rewrited only osfont, webfont and cssfont should work 
+like if using ftpm-module. 
 
 ### Example:
 
@@ -70,11 +72,13 @@ Create your css code necessary to use the font on a web page. The font is expres
 * cb       => The callback function that will be executed at the end of the process.   Set to false if you want the value to be returned within the msg parameter of the callback function.
 
 
-### Possible values for the type variable within the callback function:
+### Possible values for the type variable within the callback function(this values apply only to cssfont and webfont):
 
 warn	=> There was a slight error in the execution of the method.  
 success	=> The method was successfully.  
 error	=> There was a serious error in the execution of the method.  
 info	=> The method was successful and were returned of information which must be processed.
+
+in case you use osfont you will receive an error message if something goes wrong, no notification if everything is successful. 
 
 [ftpm]:https://github.com/heldr/ftpm
