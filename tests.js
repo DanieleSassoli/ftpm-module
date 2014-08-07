@@ -20,12 +20,12 @@ ftpm_module.listIntalledFonts(function(err, files){
         else console.log("listIntalledFonts: passed");
     }
 );
-ftpm_module.downloadWebFont('Magra','root/.fonts',function(err){
+ftpm_module.downloadWebFont('Magra',function(err){
         if(err)console.log("downloadWebFont: error: " + err);
         else console.log("downloadWebFont: passed");
     }
 );
-ftpm_module.getCssFont('Magra','root/.fonts',false,function(err){
+ftpm_module.getCssFont('Magra',false,function(err){
         if(err)console.log("getCssFont: error: " + err);
         else console.log("getCssFont: passed");
     }
