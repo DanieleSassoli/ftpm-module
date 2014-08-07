@@ -1,6 +1,10 @@
 {
   "name": "ftpm-module",
+<<<<<<< HEAD
   "version": "0.0.7",
+=======
+  "version": "0.0.6",
+>>>>>>> origin/master
   "description": "Porting of ftpm library can be used as a class within nodejs.",
   "main": "ftpm-module.js",
   "dependencies": {
@@ -39,6 +43,11 @@
     "url": "https://github.com/alanmastro/ftpm-module/issues"
   },
   "homepage": "https://github.com/alanmastro/ftpm-module",
+<<<<<<< HEAD
   "_id": "ftpm-module@0.0.7",
   "_resolved": "https://github.com/alanmastro/ftpm-module/archive/0.0.7.tar.gz"
+=======
+  "_id": "ftpm-module@0.0.6",
+  "_resolved": "https://github.com/alanmastro/ftpm-module/archive/0.0.6.tar.gz"
+>>>>>>> origin/master
 }
