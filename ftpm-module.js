@@ -2,8 +2,7 @@ var ftpm = require('./lib/ftpm');
 
 var ftpmModule = {
 	installOsFont: function(fontName, cb) {
-		ftpm.callbackFunction = cb;
-		ftpm.emit('runDriver', 'osfont', 'install', fontName);
+		ftpm.emit('runDriver', 'osfont', 'install', fontName, cb);
 	},
 	uninstallOsFont: function(fontName, cb) {
 		fontName = fontName.toTitleCase();
