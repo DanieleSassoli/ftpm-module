@@ -1,7 +1,7 @@
 ftpm-node
 ===========
 
-Rewriteing of [ftpm-module]:https://github.com/alanmastro/ftpm-module library wich is a porting of [ftpm]:https://github.com/heldr/ftpm that enables you to use it as a nodejs module. I'm rewriting it because I don't like the eventfull style of coding,
+Rewriteing of [ftpm-module] library wich is a porting of [ftpm] that enables you to use it as a nodejs module. I'm rewriting it because I don't like the eventfull style of coding,
 I reported some problems using the library ( such as callbacks emitted multiple times and with non standard messages ).
 
 ### Example:
@@ -73,5 +73,8 @@ Create a css file containing the Google font that you installed. The font is exp
 
 All functions return nothing if was succesfull or an error message in case of error;
 known bugs:
-    * list of fonts dosn't returns always indefined,
     * uninstallOsFont dosn't delete the file.
+
+
+[ftpm-module]:https://github.com/alanmastro/ftpm-module library
+[ftpm]:https://github.com/heldr/ftpm

@@ -1,6 +1,6 @@
 {
   "name": "ftpm-node",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Rewriteing of ftpm-module  in a callback-based coding style",
   "main": "ftpm-node.js",
   "dependencies": {
@@ -39,6 +39,6 @@
     "url": "https://github.com/danielesassoli/ftpm-module/issues"
   },
   "homepage": "https://github.com/danielesassoli/ftpm-module",
-  "_id": "ftpm-module@0.1.7",
-  "_resolved": "https://github.com/danielesassoli/ftpm-module/archive/0.1.7.tar.gz"
+  "_id": "ftpm-module@0.1.8",
+  "_resolved": "https://github.com/danielesassoli/ftpm-module/archive/0.1.8.tar.gz"
 }
