@@ -1,4 +1,4 @@
-ftpm-module-cb
+ftpm-node
 ===========
 
 Rewriteing of [ftpm-module] library wich is a porting of [ftpm] that enables you to use it as a nodejs module. I'm rewriting it because I don't like the eventfull style of coding,

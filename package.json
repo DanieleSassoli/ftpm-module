@@ -1,8 +1,8 @@
 {
-  "name": "ftpm-module-cb",
+  "name": "ftpm-node",
   "version": "0.1.6",
   "description": "Rewriteing of ftpm-module  in a callback-based coding style",
-  "main": "ftpm-module.js",
+  "main": "ftpm-node.js",
   "dependencies": {
     "lodash": "^2.4.1",
     "request": "^2.36.0",
